@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Car Management</title>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>Car Management</h1>
+      <div class="search-section">
+        <p>Search by License Plate number</p>
+        <form class="searchform" id="search-form">
+          <div>
+            <label for="search-lic">License Plate Number</label>
+            <input type="text" name="search-lic" id="search-lic" placeholder="">
+          </div>
+          <button id="search-car">Search</button>
+        </form>
+        <p id="search-result"></p>
+      </div>
+    </header>
+
+    <div class="info-container">
+      <div class="table-container searchform">
+        <h2 class="searchform">Car Database</h2>
+        <table id="car-table">
+          <thead>
+            <tr>
+              <th>License</th>
+              <th>Maker</th>
+              <th>Model</th>
+              <th>Year</th>
+              <th>Owner</th>
+              <th>Price</th>
+              <th>Colors</th>
+              
+              <th>Actions</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="form-container">
+        <h2 class="searchform">Insert Car Information</h2>
+        <div id="message"></div>
+        <p id="error-message"></p>
+        <form id="car-form">
+
+          <div>
+            <label for="lic-number">License Number</label>
+            <input type="text" name="lic-number" id="lic-number" placeholder="GFC-198" required>
+          </div>
+
+          <div>
+            <label for="car-maker">Car Maker</label>
+            <input type="text" name="car-maker" id="car-maker" placeholder="Tesla" required>
+          </div>
+
+          <div>
+            <label for="car-model">Car Model</label>
+            <input type="text" name="car-model" id="car-model" placeholder="S" required>
+          </div>
+
+          <div>
+            <label for="car-year">Car Year</label>
+            <input type="number" name="car-year" id="car-year" placeholder="XXXX" required>
+          </div>
+
+          <div>
+            <label for="car-owner">Car Owner</label>
+            <input type="text" name="car-owner" id="car-owner" placeholder="Plabon" required>
+          </div>
+
+          <div>
+            <label for="car-price">Car Price</label>
+            <input type="number" name="car-price" id="car-price" placeholder="45000" required>
+          </div>
+
+          <div>
+            <label for="car-color">Car Color</label>
+            <input type="text" name="car-color" id="car-color" placeholder="white" required>
+          </div>
+
+          <button type="submit" id="add-car">Add Car</button>
+          <button type="reset">Reset</button>
+
+        </form>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
